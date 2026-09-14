@@ -1,0 +1,34 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next/
+/out/
+
+# Production build & cache
+/build
+/.vercel
+
+# Environment variables (Crucial for Supabase & TMDB keys)
+.env
+.env*.local
+!.env.example
+!.env.local.example
+
+# Logs & Debugging
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+/.pnpm-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# OS / IDE generated files
+.DS_Store
+*.pem
+.idea/
+.vscode/
