@@ -1,21 +1,40 @@
 "use client";
 
 import { motion, useAnimation, PanInfo } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { posterUrl, type MediaItem } from "@/lib/tmdb";
 
 interface Props {
   item: MediaItem;
   onSwipe: (direction: "like" | "pass") => void;
   onOpenTrailer: () => void;
-  isTop: boolean;
+  /** 0 = en üstteki (aktif) kart, 1 = bir arkadaki, 2 = iki arkadaki ... */
+  stackPosition: number;
 }
 
 const SWIPE_THRESHOLD = 120;
 
-export default function SwipeCard({ item, onSwipe, onOpenTrailer, isTop }: Props) {
+export default function SwipeCard({ item, onSwipe, onOpenTrailer, stackPosition }: Props) {
+  const isTop = stackPosition === 0;
   const controls = useAnimation();
   const [dragDir, setDragDir] = useState<"like" | "pass" | null>(null);
+
+  // Kart yığındaki konumunu değiştirdiğinde (ör. arkadaki kart öne geçtiğinde)
+  // ölçek/opaklık/konumunu doğru değerlere animasyonla senkronize et.
+  // Sadece `initial` kullanmak yeterli değildi çünkü o yalnızca ilk mount'ta çalışır;
+  // ikinci kart üste geçtiğinde küçük/soluk kalmasının sebebi buydu.
+  useEffect(() => {
+    controls.start({
+      scale: 1 - stackPosition * 0.05,
+      y: stackPosition * 10,
+      opacity: stackPosition === 0 ? 1 : stackPosition === 1 ? 0.7 : 0.4,
+      x: 0,
+      rotate: 0,
+      transition: { type: "spring", stiffness: 300, damping: 30 },
+    });
+    if (isTop) setDragDir(null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [stackPosition]);
 
   function handleDrag(_: any, info: PanInfo) {
     if (info.offset.x > 40) setDragDir("like");
@@ -51,13 +70,17 @@ export default function SwipeCard({ item, onSwipe, onOpenTrailer, isTop }: Props
   return (
     <motion.div
       className="absolute inset-0"
-      style={{ zIndex: isTop ? 10 : 5 }}
+      style={{ zIndex: 10 - stackPosition }}
       drag={isTop ? "x" : false}
       dragConstraints={{ left: 0, right: 0 }}
       onDrag={handleDrag}
       onDragEnd={handleDragEnd}
       animate={controls}
-      initial={{ scale: isTop ? 1 : 0.95, y: isTop ? 0 : 10, opacity: isTop ? 1 : 0.6 }}
+      initial={{
+        scale: 1 - stackPosition * 0.05,
+        y: stackPosition * 10,
+        opacity: stackPosition === 0 ? 1 : stackPosition === 1 ? 0.7 : 0.4,
+      }}
     >
       <div
         className="relative w-full h-full rounded-3xl overflow-hidden card-shadow bg-surface select-none"

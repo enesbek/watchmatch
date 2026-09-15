@@ -8,6 +8,7 @@ import MatchModal from "@/components/MatchModal";
 import { fetchDeck, fetchTrailerKey, type MediaItem } from "@/lib/tmdb";
 import {
   getOrCreateGuestId,
+  joinRoom,
   recordSwipe,
   checkAndCreateMatch,
   subscribeToRoom,
@@ -37,14 +38,17 @@ export default function RoomPage() {
     setUserId(id);
 
     async function load() {
-      const { data, error } = await supabase
-        .from("rooms")
-        .select("*")
-        .eq("code", code)
-        .single();
-
-      if (error || !data) {
-        setError("Oda bulunamadı. Kodu kontrol edin veya yeni bir oda oluşturun.");
+      // ÖNEMLİ: joinRoom burada çağrılıyor (sadece home sayfasındaki "Odaya Katıl"
+      // formunda değil). Aksi halde QR kod veya paylaşılan link ile doğrudan bu
+      // sayfaya gelen misafir hiçbir zaman veritabanına "guest" olarak kaydolmuyor
+      // ve host'un bekleme ekranı hiç bitmiyordu. joinRoom, çağıran kişi zaten
+      // host ise veritabanında değişiklik yapmadığı için host için de güvenli.
+      let data: any;
+      try {
+        const result = await joinRoom(code);
+        data = result.room;
+      } catch (e: any) {
+        setError(e.message ?? "Oda bulunamadı. Kodu kontrol edin veya yeni bir oda oluşturun.");
         setLoading(false);
         return;
       }
@@ -179,7 +183,7 @@ export default function RoomPage() {
     );
   }
 
-  const visibleCards = deck.slice(cursor, cursor + 2);
+  const visibleCards = deck.slice(cursor, cursor + 3);
   const deckFinished = cursor >= deck.length;
 
   return (
@@ -201,7 +205,7 @@ export default function RoomPage() {
               <SwipeCard
                 key={item.id}
                 item={item}
-                isTop={i === 0}
+                stackPosition={i}
                 onSwipe={(dir) => handleSwipe(item, dir)}
                 onOpenTrailer={() => handleOpenTrailer(item)}
               />
