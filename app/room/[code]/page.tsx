@@ -14,10 +14,12 @@ import {
   subscribeToRoom,
 } from "@/lib/room";
 import { supabase } from "@/lib/supabase";
+import { useI18n } from "@/lib/i18n";
 
 export default function RoomPage() {
   const params = useParams<{ code: string }>();
   const code = params.code;
+  const { t } = useI18n();
 
   const [room, setRoom] = useState<any>(null);
   const [userId, setUserId] = useState<string>("");
@@ -42,7 +44,7 @@ export default function RoomPage() {
         const result = await joinRoom(code);
         data = result.room;
       } catch (e: any) {
-        setError(e.message ?? "Oda bulunamadı. Kodu kontrol edin veya yeni bir oda oluşturun.");
+        setError(e.message === "ROOM_NOT_FOUND" ? t("errors.roomNotFound") : e.message ?? t("errors.roomNotFound"));
         setLoading(false);
         return;
       }
@@ -57,7 +59,7 @@ export default function RoomPage() {
         });
         setDeck(items);
       } catch (e: any) {
-        setError(e.message ?? "İçerik yüklenemedi. TMDB API anahtarınızı kontrol edin.");
+        setError(e.message ?? t("errors.contentFailed"));
       }
       setLoading(false);
     }
@@ -147,7 +149,7 @@ export default function RoomPage() {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center text-white/60">
-        Yükleniyor...
+        {t("room.loading")}
       </div>
     );
   }
@@ -163,13 +165,13 @@ export default function RoomPage() {
   if (waitingForGuest) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center gap-6 p-6 text-center">
-        <p className="text-white/60">Partnerini bekliyorsun...</p>
+        <p className="text-white/60">{t("room.waiting")}</p>
         <div className="text-5xl font-mono tracking-[0.3em] text-white font-bold">
           {code}
         </div>
-        <img src={qrUrl} alt="QR kod" className="rounded-xl bg-white p-2" />
+        <img src={qrUrl} alt={t("room.qrAlt")} className="rounded-xl bg-white p-2" />
         <p className="text-white/40 text-sm max-w-xs">
-          Bu kodu veya linki WhatsApp'tan partnerine gönder. Katıldığında otomatik başlayacaksın.
+          {t("room.shareHint")}
         </p>
       </div>
     );
@@ -181,15 +183,15 @@ export default function RoomPage() {
   return (
     <main className="min-h-screen flex flex-col items-center px-4 py-6">
       <div className="w-full max-w-md flex justify-between items-center mb-4 text-white/50 text-sm">
-        <span>Oda: {code}</span>
-        <span>{room?.media_type === "movie" ? "🎬 Film" : "📺 Dizi"}</span>
+        <span>{t("room.roomLabel", { code })}</span>
+        <span>{room?.media_type === "movie" ? t("home.movie") : t("home.tv")}</span>
       </div>
 
       <div className="relative w-full max-w-md aspect-[2/3]">
         {deckFinished ? (
           <div className="w-full h-full flex flex-col items-center justify-center text-center gap-3 text-white/50">
-            <p className="text-lg">Kartlar bitti!</p>
-            <p className="text-sm">Daha fazla içerik için filtreleri değiştirip yeni bir oda deneyebilirsiniz.</p>
+            <p className="text-lg">{t("room.deckFinished")}</p>
+            <p className="text-sm">{t("room.deckFinishedHint")}</p>
           </div>
         ) : (
           visibleCards

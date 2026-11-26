@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import { fetchWatchProviders, posterUrl, type MediaItem, type WatchProvider } from "@/lib/tmdb";
+import { useI18n } from "@/lib/i18n";
 
 interface Props {
   item: MediaItem;
@@ -11,6 +12,7 @@ interface Props {
 }
 
 export default function MatchModal({ item, onClose, onKeepSwiping }: Props) {
+  const { t } = useI18n();
   const [providers, setProviders] = useState<WatchProvider[]>([]);
   const [link, setLink] = useState<string | undefined>();
 
@@ -30,10 +32,10 @@ export default function MatchModal({ item, onClose, onKeepSwiping }: Props) {
   return (
     <div className="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-center p-6 animate-popIn">
       <p className="text-neon-pink font-extrabold text-lg tracking-widest mb-1">
-        EŞLEŞME!
+        {t("match.title")}
       </p>
       <h2 className="text-white text-3xl font-bold text-center mb-6">
-        İkiniz de "{item.title}" dedi 🎉
+        {t("match.bothSaid", { title: item.title })}
       </h2>
 
       <img
@@ -44,7 +46,7 @@ export default function MatchModal({ item, onClose, onKeepSwiping }: Props) {
 
       <div className="w-full max-w-sm">
         <p className="text-white/50 text-sm mb-2 text-center">
-          Türkiye'de şurada izlenebilir:
+          {t("match.availableOn")}
         </p>
         {providers.length > 0 ? (
           <div className="flex justify-center gap-3 mb-6 flex-wrap">
@@ -60,7 +62,7 @@ export default function MatchModal({ item, onClose, onKeepSwiping }: Props) {
           </div>
         ) : (
           <p className="text-white/40 text-sm text-center mb-6">
-            Bu bölgede dijital platform bilgisi bulunamadı.
+            {t("match.noProviders")}
           </p>
         )}
 
@@ -71,14 +73,14 @@ export default function MatchModal({ item, onClose, onKeepSwiping }: Props) {
             rel="noreferrer"
             className="block text-center py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-neon-purple to-neon-pink shadow-neon mb-3"
           >
-            Hemen İzle
+            {t("match.watchNow")}
           </a>
         )}
         <button
           onClick={onKeepSwiping}
           className="w-full py-3.5 rounded-xl font-semibold text-white bg-white/10 hover:bg-white/15"
         >
-          Kaydırmaya Devam Et
+          {t("match.keepSwiping")}
         </button>
       </div>
     </div>

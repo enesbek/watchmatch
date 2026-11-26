@@ -5,7 +5,7 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string;
 
 if (!supabaseUrl || !supabaseAnonKey) {
   console.warn(
-    "Supabase env değişkenleri eksik. .env.local dosyasını kontrol edin."
+    "Missing Supabase env variables. Check your .env.local file."
   );
 }
 

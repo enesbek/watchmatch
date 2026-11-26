@@ -3,6 +3,7 @@
 import { motion, useAnimation, PanInfo } from "framer-motion";
 import { useEffect, useState } from "react";
 import { posterUrl, type MediaItem } from "@/lib/tmdb";
+import { useI18n } from "@/lib/i18n";
 
 interface Props {
   item: MediaItem;
@@ -14,6 +15,7 @@ interface Props {
 const SWIPE_THRESHOLD = 120;
 
 export default function SwipeCard({ item, onSwipe, onOpenTrailer, stackPosition }: Props) {
+  const { t } = useI18n();
   const isTop = stackPosition === 0;
   const controls = useAnimation();
   const [dragDir, setDragDir] = useState<"like" | "pass" | null>(null);
@@ -90,12 +92,12 @@ export default function SwipeCard({ item, onSwipe, onOpenTrailer, stackPosition 
 
         {dragDir === "like" && (
           <div className="absolute top-8 left-6 border-4 border-green-400 text-green-400 font-extrabold text-2xl px-4 py-1 rounded-lg rotate-[-15deg]">
-            BEĞENDİM
+            {t("card.like")}
           </div>
         )}
         {dragDir === "pass" && (
           <div className="absolute top-8 right-6 border-4 border-neon-red text-neon-red font-extrabold text-2xl px-4 py-1 rounded-lg rotate-[15deg]">
-            PAS
+            {t("card.pass")}
           </div>
         )}
 
@@ -108,9 +110,9 @@ export default function SwipeCard({ item, onSwipe, onOpenTrailer, stackPosition 
           </div>
           <h2 className="text-2xl font-bold leading-tight">{item.title}</h2>
           <p className="text-white/70 text-sm mt-1.5 line-clamp-2">
-            {item.overview || "Özet bulunamadı."}
+            {item.overview || t("card.noOverview")}
           </p>
-          <p className="text-white/40 text-xs mt-2">Fragman için karta dokun</p>
+          <p className="text-white/40 text-xs mt-2">{t("card.tapForTrailer")}</p>
         </div>
       </div>
 
@@ -122,7 +124,7 @@ export default function SwipeCard({ item, onSwipe, onOpenTrailer, stackPosition 
               programmaticSwipe("pass");
             }}
             className="w-16 h-16 rounded-full bg-surface border border-white/10 flex items-center justify-center text-3xl shadow-lg active:scale-90 transition-transform"
-            aria-label="Pas geç"
+            aria-label={t("card.passAria")}
           >
             ❌
           </button>
@@ -132,7 +134,7 @@ export default function SwipeCard({ item, onSwipe, onOpenTrailer, stackPosition 
               programmaticSwipe("like");
             }}
             className="w-16 h-16 rounded-full bg-surface border border-white/10 flex items-center justify-center text-3xl shadow-lg active:scale-90 transition-transform"
-            aria-label="Beğen"
+            aria-label={t("card.likeAria")}
           >
             💚
           </button>

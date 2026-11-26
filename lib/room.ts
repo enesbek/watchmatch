@@ -49,7 +49,7 @@ export async function joinRoom(code: string) {
     .eq("code", code)
     .single();
 
-  if (error || !room) throw new Error("Oda bulunamadı. Kodu kontrol edin.");
+  if (error || !room) throw new Error("ROOM_NOT_FOUND");
 
   if (room.host_id !== guestId && !room.guest_id) {
     const { error: updateError } = await supabase

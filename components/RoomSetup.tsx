@@ -5,9 +5,11 @@ import { useRouter } from "next/navigation";
 import { createRoom, joinRoom } from "@/lib/room";
 import type { DiscoveryMode, MediaType } from "@/lib/tmdb";
 import clsx from "clsx";
+import { useI18n } from "@/lib/i18n";
 
 export default function RoomSetup() {
   const router = useRouter();
+  const { t } = useI18n();
   const [mediaType, setMediaType] = useState<MediaType>("movie");
   const [discoveryMode, setDiscoveryMode] = useState<DiscoveryMode>("popular");
   const [joinCode, setJoinCode] = useState("");
@@ -25,14 +27,14 @@ export default function RoomSetup() {
       });
       router.push(`/room/${room.code}`);
     } catch (e: any) {
-      setError(e.message ?? "Oda oluşturulamadı.");
+      setError(e.message ?? t("errors.createFailed"));
       setLoading(false);
     }
   }
 
   async function handleJoin() {
     if (joinCode.trim().length !== 4) {
-      setError("Lütfen 4 haneli oda kodunu girin.");
+      setError(t("errors.invalidCode"));
       return;
     }
     setLoading(true);
@@ -41,7 +43,7 @@ export default function RoomSetup() {
       await joinRoom(joinCode.trim());
       router.push(`/room/${joinCode.trim()}`);
     } catch (e: any) {
-      setError(e.message ?? "Odaya katılınamadı.");
+      setError(e.message === "ROOM_NOT_FOUND" ? t("errors.roomNotFound") : e.message ?? t("errors.joinFailed"));
       setLoading(false);
     }
   }
@@ -53,26 +55,26 @@ export default function RoomSetup() {
           WatchMatch
         </h1>
         <p className="mt-2 text-white/60">
-          Bu akşam ne izlesek? Swipe edin, eşleşin, izleyin.
+          {t("home.tagline")}
         </p>
       </div>
 
       <section className="bg-surface rounded-2xl p-5 flex flex-col gap-5 card-shadow">
         <div>
-          <p className="text-sm font-medium text-white/70 mb-2">İçerik Türü</p>
+          <p className="text-sm font-medium text-white/70 mb-2">{t("home.contentType")}</p>
           <div className="grid grid-cols-2 gap-2">
-            {(["movie", "tv"] as MediaType[]).map((t) => (
+            {(["movie", "tv"] as MediaType[]).map((type) => (
               <button
-                key={t}
-                onClick={() => setMediaType(t)}
+                key={type}
+                onClick={() => setMediaType(type)}
                 className={clsx(
                   "py-3 rounded-xl font-medium transition-all",
-                  mediaType === t
+                  mediaType === type
                     ? "bg-neon-purple text-white shadow-neon"
                     : "bg-white/5 text-white/60 hover:bg-white/10"
                 )}
               >
-                {t === "movie" ? "🎬 Film" : "📺 Dizi"}
+                {type === "movie" ? t("home.movie") : t("home.tv")}
               </button>
             ))}
           </div>
@@ -80,14 +82,14 @@ export default function RoomSetup() {
 
         <div>
           <p className="text-sm font-medium text-white/70 mb-2">
-            Bilindiklik Tercihi
+            {t("home.discovery")}
           </p>
           <div className="flex flex-col gap-2">
             {(
               [
-                { key: "popular", label: "🔥 Popüler Klasikler" },
-                { key: "hidden_gems", label: "💎 Gizli Cevherler" },
-                { key: "mixed", label: "🎲 Karışık" },
+                { key: "popular", label: t("home.popular") },
+                { key: "hidden_gems", label: t("home.hiddenGems") },
+                { key: "mixed", label: t("home.mixed") },
               ] as { key: DiscoveryMode; label: string }[]
             ).map((opt) => (
               <button
@@ -111,13 +113,13 @@ export default function RoomSetup() {
           disabled={loading}
           className="mt-1 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-neon-purple to-neon-pink shadow-neon disabled:opacity-50"
         >
-          {loading ? "Oluşturuluyor..." : "Yeni Oda Oluştur"}
+          {loading ? t("home.creating") : t("home.createRoom")}
         </button>
       </section>
 
       <div className="flex items-center gap-3 text-white/30 text-sm">
         <div className="h-px flex-1 bg-white/10" />
-        veya odaya katıl
+        {t("home.orJoin")}
         <div className="h-px flex-1 bg-white/10" />
       </div>
 
@@ -125,7 +127,7 @@ export default function RoomSetup() {
         <input
           value={joinCode}
           onChange={(e) => setJoinCode(e.target.value.replace(/\D/g, "").slice(0, 4))}
-          placeholder="4 haneli oda kodu"
+          placeholder={t("home.codePlaceholder")}
           inputMode="numeric"
           className="bg-white/5 rounded-xl px-4 py-3.5 text-center text-2xl tracking-[0.5em] font-mono text-white placeholder:text-white/20 outline-none focus:ring-2 focus:ring-neon-purple"
         />
@@ -134,7 +136,7 @@ export default function RoomSetup() {
           disabled={loading}
           className="py-3.5 rounded-xl font-semibold text-white bg-white/10 hover:bg-white/15 disabled:opacity-50"
         >
-          Odaya Katıl
+          {t("home.joinRoom")}
         </button>
       </section>
 
