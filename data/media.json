@@ -1,0 +1,1045 @@
+[
+  {
+    "id": 900001,
+    "media_type": "movie",
+    "title": "Kül Rengi Liman",
+    "overview": "Kaybolan bir haritanın peşine düşen iki yabancı, beklenmedik bir yolculuğa çıkar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.0,
+    "vote_count": 162,
+    "release_date": "2021-05-08",
+    "genre_ids": [
+      80
+    ]
+  },
+  {
+    "id": 900002,
+    "media_type": "movie",
+    "title": "The Copper Lantern Society",
+    "overview": "Bir yaz boyunca aynı otelde çalışan gençlerin hikâyesi.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.5,
+    "vote_count": 3248,
+    "release_date": "2016-07-02",
+    "genre_ids": [
+      16
+    ]
+  },
+  {
+    "id": 900003,
+    "media_type": "movie",
+    "title": "Sessiz Vadinin Bekçisi",
+    "overview": "Şehrin en eski tiyatrosunu kurtarmaya çalışan bir topluluk.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.3,
+    "vote_count": 1269,
+    "release_date": "2015-04-23",
+    "genre_ids": [
+      878,
+      10751,
+      10752
+    ]
+  },
+  {
+    "id": 900004,
+    "media_type": "movie",
+    "title": "Orbit of Small Things",
+    "overview": "Emekli bir saatçi, son siparişinde tuhaf bir mesaj bulur.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.3,
+    "vote_count": 86,
+    "release_date": "2022-03-23",
+    "genre_ids": [
+      14,
+      27
+    ]
+  },
+  {
+    "id": 900005,
+    "media_type": "movie",
+    "title": "Yedinci Kat Penceresi",
+    "overview": "Sisli bir limanda kaybolan bir gemi, yıllar sonra geri döner.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.2,
+    "vote_count": 11429,
+    "release_date": "2001-02-13",
+    "genre_ids": [
+      9648
+    ]
+  },
+  {
+    "id": 900006,
+    "media_type": "movie",
+    "title": "Marrow Creek",
+    "overview": "Kaybolan bir haritanın peşine düşen iki yabancı, beklenmedik bir yolculuğa çıkar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.3,
+    "vote_count": 1823,
+    "release_date": "2021-08-18",
+    "genre_ids": [
+      10749
+    ]
+  },
+  {
+    "id": 900007,
+    "media_type": "movie",
+    "title": "Tuz ve Pusula",
+    "overview": "Küçük bir kasabada geçmişin sırları su yüzüne çıkınca herkesin hayatı değişir.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.9,
+    "vote_count": 2634,
+    "release_date": "2017-06-19",
+    "genre_ids": [
+      16
+    ]
+  },
+  {
+    "id": 900008,
+    "media_type": "movie",
+    "title": "The Last Cartographer of Velm",
+    "overview": "Şehrin en eski tiyatrosunu kurtarmaya çalışan bir topluluk.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.5,
+    "vote_count": 9882,
+    "release_date": "2000-04-28",
+    "genre_ids": [
+      10749
+    ]
+  },
+  {
+    "id": 900009,
+    "media_type": "movie",
+    "title": "Gece Treninde Bir Yabancı",
+    "overview": "Kaybolan bir haritanın peşine düşen iki yabancı, beklenmedik bir yolculuğa çıkar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.9,
+    "vote_count": 12354,
+    "release_date": "2003-06-12",
+    "genre_ids": [
+      14
+    ]
+  },
+  {
+    "id": 900010,
+    "media_type": "movie",
+    "title": "Paper Kites Over Dunmore",
+    "overview": "Uzak bir istasyonda mahsur kalan mürettebat, zamanla yarışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.0,
+    "vote_count": 760,
+    "release_date": "2015-12-08",
+    "genre_ids": [
+      53
+    ]
+  },
+  {
+    "id": 900011,
+    "media_type": "movie",
+    "title": "Kırık Saatin Sahibi",
+    "overview": "Küçük bir kasabada geçmişin sırları su yüzüne çıkınca herkesin hayatı değişir.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.4,
+    "vote_count": 7596,
+    "release_date": "2019-06-27",
+    "genre_ids": [
+      10751
+    ]
+  },
+  {
+    "id": 900012,
+    "media_type": "movie",
+    "title": "Hollow Pines Motel",
+    "overview": "İki kardeş, babalarından kalan fırını ayakta tutmaya çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.9,
+    "vote_count": 13545,
+    "release_date": "2006-02-07",
+    "genre_ids": [
+      18,
+      27,
+      37
+    ]
+  },
+  {
+    "id": 900013,
+    "media_type": "movie",
+    "title": "Rüzgârın Unuttuğu Köy",
+    "overview": "Şehrin en eski tiyatrosunu kurtarmaya çalışan bir topluluk.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.6,
+    "vote_count": 2693,
+    "release_date": "2012-03-09",
+    "genre_ids": [
+      10751
+    ]
+  },
+  {
+    "id": 900014,
+    "media_type": "movie",
+    "title": "A Quiet Inventory",
+    "overview": "İki kardeş, babalarından kalan fırını ayakta tutmaya çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.7,
+    "vote_count": 14438,
+    "release_date": "2016-07-12",
+    "genre_ids": [
+      80
+    ]
+  },
+  {
+    "id": 900015,
+    "media_type": "movie",
+    "title": "Mavi Fenerin Altında",
+    "overview": "Kaybolan bir haritanın peşine düşen iki yabancı, beklenmedik bir yolculuğa çıkar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 5.9,
+    "vote_count": 1943,
+    "release_date": "2025-02-05",
+    "genre_ids": [
+      36,
+      99,
+      878
+    ]
+  },
+  {
+    "id": 900016,
+    "media_type": "movie",
+    "title": "The Glasswright's Daughter",
+    "overview": "Şehrin en eski tiyatrosunu kurtarmaya çalışan bir topluluk.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.6,
+    "vote_count": 2500,
+    "release_date": "2012-09-09",
+    "genre_ids": [
+      27,
+      28,
+      35
+    ]
+  },
+  {
+    "id": 900017,
+    "media_type": "movie",
+    "title": "Son Vapur Saat Dokuzda",
+    "overview": "Küçük bir kasabada geçmişin sırları su yüzüne çıkınca herkesin hayatı değişir.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.8,
+    "vote_count": 11546,
+    "release_date": "2001-05-14",
+    "genre_ids": [
+      53
+    ]
+  },
+  {
+    "id": 900018,
+    "media_type": "movie",
+    "title": "Ninefold Echo",
+    "overview": "Bir yaz boyunca aynı otelde çalışan gençlerin hikâyesi.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.3,
+    "vote_count": 9030,
+    "release_date": "2014-03-17",
+    "genre_ids": [
+      36
+    ]
+  },
+  {
+    "id": 900019,
+    "media_type": "movie",
+    "title": "Bakır Kanatlar",
+    "overview": "Kaybolan bir haritanın peşine düşen iki yabancı, beklenmedik bir yolculuğa çıkar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.2,
+    "vote_count": 721,
+    "release_date": "2015-09-01",
+    "genre_ids": [
+      27,
+      28,
+      10752
+    ]
+  },
+  {
+    "id": 900020,
+    "media_type": "movie",
+    "title": "Halcyon Drift",
+    "overview": "İki kardeş, babalarından kalan fırını ayakta tutmaya çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.2,
+    "vote_count": 10476,
+    "release_date": "2005-01-08",
+    "genre_ids": [
+      16,
+      37,
+      9648
+    ]
+  },
+  {
+    "id": 900021,
+    "media_type": "movie",
+    "title": "Unutulmuş Tiyatro",
+    "overview": "Uzak bir istasyonda mahsur kalan mürettebat, zamanla yarışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.9,
+    "vote_count": 17855,
+    "release_date": "2022-03-05",
+    "genre_ids": [
+      80,
+      99,
+      10752
+    ]
+  },
+  {
+    "id": 900022,
+    "media_type": "movie",
+    "title": "The Borrowed Summer",
+    "overview": "Uzak bir istasyonda mahsur kalan mürettebat, zamanla yarışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.5,
+    "vote_count": 2268,
+    "release_date": "2022-12-23",
+    "genre_ids": [
+      36
+    ]
+  },
+  {
+    "id": 900023,
+    "media_type": "movie",
+    "title": "Gölge Avcısının Defteri",
+    "overview": "Bir yaz boyunca aynı otelde çalışan gençlerin hikâyesi.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.4,
+    "vote_count": 12636,
+    "release_date": "2012-09-15",
+    "genre_ids": [
+      10751
+    ]
+  },
+  {
+    "id": 900024,
+    "media_type": "movie",
+    "title": "Tinder & Thistle",
+    "overview": "Küçük bir kasabada geçmişin sırları su yüzüne çıkınca herkesin hayatı değişir.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 5.8,
+    "vote_count": 1089,
+    "release_date": "2016-09-08",
+    "genre_ids": [
+      12,
+      28,
+      10751
+    ]
+  },
+  {
+    "id": 900025,
+    "media_type": "movie",
+    "title": "Eski Şehrin Haritacısı",
+    "overview": "İki kardeş, babalarından kalan fırını ayakta tutmaya çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.4,
+    "vote_count": 188,
+    "release_date": "2025-06-03",
+    "genre_ids": [
+      14,
+      27,
+      10751
+    ]
+  },
+  {
+    "id": 900026,
+    "media_type": "movie",
+    "title": "Northbound to Quell",
+    "overview": "Uzak bir istasyonda mahsur kalan mürettebat, zamanla yarışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.2,
+    "vote_count": 4735,
+    "release_date": "2021-10-19",
+    "genre_ids": [
+      10751,
+      10752
+    ]
+  },
+  {
+    "id": 900027,
+    "media_type": "movie",
+    "title": "Yağmur Duası",
+    "overview": "Küçük bir kasabada geçmişin sırları su yüzüne çıkınca herkesin hayatı değişir.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.1,
+    "vote_count": 3576,
+    "release_date": "2019-07-12",
+    "genre_ids": [
+      53,
+      878
+    ]
+  },
+  {
+    "id": 900028,
+    "media_type": "movie",
+    "title": "The Brass Orchard",
+    "overview": "Bir yaz boyunca aynı otelde çalışan gençlerin hikâyesi.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.1,
+    "vote_count": 2706,
+    "release_date": "2001-01-13",
+    "genre_ids": [
+      27,
+      35,
+      10752
+    ]
+  },
+  {
+    "id": 900029,
+    "media_type": "movie",
+    "title": "Sınırdaki Fırın",
+    "overview": "Kaybolan bir haritanın peşine düşen iki yabancı, beklenmedik bir yolculuğa çıkar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.1,
+    "vote_count": 15100,
+    "release_date": "2002-07-06",
+    "genre_ids": [
+      53,
+      10751
+    ]
+  },
+  {
+    "id": 900030,
+    "media_type": "movie",
+    "title": "Lanternfall",
+    "overview": "Bir yaz boyunca aynı otelde çalışan gençlerin hikâyesi.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.8,
+    "vote_count": 3608,
+    "release_date": "1999-11-18",
+    "genre_ids": [
+      16
+    ]
+  },
+  {
+    "id": 900031,
+    "media_type": "movie",
+    "title": "Kuzey Işıklarının Postacısı",
+    "overview": "Uzak bir istasyonda mahsur kalan mürettebat, zamanla yarışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.3,
+    "vote_count": 2049,
+    "release_date": "2013-04-28",
+    "genre_ids": [
+      12,
+      99
+    ]
+  },
+  {
+    "id": 900032,
+    "media_type": "movie",
+    "title": "Saltmarsh Requiem",
+    "overview": "Bir yaz boyunca aynı otelde çalışan gençlerin hikâyesi.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 5.6,
+    "vote_count": 13193,
+    "release_date": "2006-08-10",
+    "genre_ids": [
+      80,
+      10752
+    ]
+  },
+  {
+    "id": 900033,
+    "media_type": "movie",
+    "title": "İki Kıyı Arasında",
+    "overview": "Küçük bir kasabada geçmişin sırları su yüzüne çıkınca herkesin hayatı değişir.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.4,
+    "vote_count": 2316,
+    "release_date": "2016-12-18",
+    "genre_ids": [
+      27
+    ]
+  },
+  {
+    "id": 900034,
+    "media_type": "movie",
+    "title": "The Velvet Ledger",
+    "overview": "Kaybolan bir haritanın peşine düşen iki yabancı, beklenmedik bir yolculuğa çıkar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.1,
+    "vote_count": 2012,
+    "release_date": "2014-09-06",
+    "genre_ids": [
+      37
+    ]
+  },
+  {
+    "id": 900035,
+    "media_type": "movie",
+    "title": "Ayna Sokağı No: 7",
+    "overview": "Kaybolan bir haritanın peşine düşen iki yabancı, beklenmedik bir yolculuğa çıkar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.0,
+    "vote_count": 2645,
+    "release_date": "2017-02-22",
+    "genre_ids": [
+      10749
+    ]
+  },
+  {
+    "id": 900036,
+    "media_type": "movie",
+    "title": "Dustwater Junction",
+    "overview": "Sisli bir limanda kaybolan bir gemi, yıllar sonra geri döner.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.2,
+    "vote_count": 8467,
+    "release_date": "2016-10-02",
+    "genre_ids": [
+      16,
+      27,
+      878
+    ]
+  },
+  {
+    "id": 900037,
+    "media_type": "tv",
+    "title": "Kıyı Karakolu",
+    "overview": "Gizli bir devlet biriminin sıradışı görevleri.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.5,
+    "vote_count": 896,
+    "release_date": "2019-12-11",
+    "genre_ids": [
+      99
+    ]
+  },
+  {
+    "id": 900038,
+    "media_type": "tv",
+    "title": "The Wexley Files",
+    "overview": "Bir adadaki küçük topluluk, fırtınadan sonra yeniden toparlanır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.0,
+    "vote_count": 10230,
+    "release_date": "2012-06-25",
+    "genre_ids": [
+      10759
+    ]
+  },
+  {
+    "id": 900039,
+    "media_type": "tv",
+    "title": "Apartman Yedi",
+    "overview": "Bir apartmanın sakinleri arasındaki ilişkiler ve sırlar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.3,
+    "vote_count": 3676,
+    "release_date": "2000-09-07",
+    "genre_ids": [
+      18,
+      35,
+      99
+    ]
+  },
+  {
+    "id": 900040,
+    "media_type": "tv",
+    "title": "Ironvale Academy",
+    "overview": "Sahil kasabasındaki küçük bir karakolun gündelik vakaları.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.4,
+    "vote_count": 1573,
+    "release_date": "2007-03-15",
+    "genre_ids": [
+      99,
+      10764,
+      10768
+    ]
+  },
+  {
+    "id": 900041,
+    "media_type": "tv",
+    "title": "Mahalle Muhtarı",
+    "overview": "Genç bir dedektif, şehrin çözülmemiş dosyalarını yeniden açar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.5,
+    "vote_count": 10210,
+    "release_date": "2019-02-05",
+    "genre_ids": [
+      16,
+      10764
+    ]
+  },
+  {
+    "id": 900042,
+    "media_type": "tv",
+    "title": "Signal From Haldane",
+    "overview": "Bir adadaki küçük topluluk, fırtınadan sonra yeniden toparlanır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.4,
+    "vote_count": 7301,
+    "release_date": "2020-06-07",
+    "genre_ids": [
+      37,
+      99,
+      10765
+    ]
+  },
+  {
+    "id": 900043,
+    "media_type": "tv",
+    "title": "Gizli Mutfak",
+    "overview": "Bir aile, miras kalan yazlıkta tatili geçirmeye çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.4,
+    "vote_count": 268,
+    "release_date": "2000-11-14",
+    "genre_ids": [
+      10759,
+      10764
+    ]
+  },
+  {
+    "id": 900044,
+    "media_type": "tv",
+    "title": "The Pemberton Exchange",
+    "overview": "Sahil kasabasındaki küçük bir karakolun gündelik vakaları.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.8,
+    "vote_count": 8983,
+    "release_date": "2003-12-15",
+    "genre_ids": [
+      10751,
+      10764,
+      10765
+    ]
+  },
+  {
+    "id": 900045,
+    "media_type": "tv",
+    "title": "Dağ Evi Kayıtları",
+    "overview": "Genç bir dedektif, şehrin çözülmemiş dosyalarını yeniden açar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 5.9,
+    "vote_count": 5284,
+    "release_date": "2015-01-27",
+    "genre_ids": [
+      10765,
+      10768
+    ]
+  },
+  {
+    "id": 900046,
+    "media_type": "tv",
+    "title": "Lowtide",
+    "overview": "Bir hastanenin gece vardiyasında yaşananlar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.7,
+    "vote_count": 231,
+    "release_date": "2007-06-26",
+    "genre_ids": [
+      18
+    ]
+  },
+  {
+    "id": 900047,
+    "media_type": "tv",
+    "title": "Sahaf",
+    "overview": "Bir hastanenin gece vardiyasında yaşananlar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.5,
+    "vote_count": 3768,
+    "release_date": "2009-09-28",
+    "genre_ids": [
+      35,
+      10768
+    ]
+  },
+  {
+    "id": 900048,
+    "media_type": "tv",
+    "title": "Ninth Precinct of Arden",
+    "overview": "Eski bir sahaf dükkânında her bölüm yeni bir hikâye.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.0,
+    "vote_count": 6201,
+    "release_date": "2011-01-06",
+    "genre_ids": [
+      18,
+      80,
+      10751
+    ]
+  },
+  {
+    "id": 900049,
+    "media_type": "tv",
+    "title": "Boğaz Ekspresi",
+    "overview": "Bir adadaki küçük topluluk, fırtınadan sonra yeniden toparlanır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.3,
+    "vote_count": 502,
+    "release_date": "2010-01-28",
+    "genre_ids": [
+      80,
+      10764
+    ]
+  },
+  {
+    "id": 900050,
+    "media_type": "tv",
+    "title": "The Moth Collectors",
+    "overview": "Bir aile, miras kalan yazlıkta tatili geçirmeye çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.6,
+    "vote_count": 7857,
+    "release_date": "2005-01-22",
+    "genre_ids": [
+      10751
+    ]
+  },
+  {
+    "id": 900051,
+    "media_type": "tv",
+    "title": "Kayıp Eşyalar Bürosu",
+    "overview": "Bir aile, miras kalan yazlıkta tatili geçirmeye çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.4,
+    "vote_count": 2674,
+    "release_date": "2022-05-12",
+    "genre_ids": [
+      10751,
+      10764,
+      10765
+    ]
+  },
+  {
+    "id": 900052,
+    "media_type": "tv",
+    "title": "Greywater Hospital",
+    "overview": "Gizli bir devlet biriminin sıradışı görevleri.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.5,
+    "vote_count": 532,
+    "release_date": "2006-03-19",
+    "genre_ids": [
+      16,
+      10759
+    ]
+  },
+  {
+    "id": 900053,
+    "media_type": "tv",
+    "title": "Yazlıkçılar",
+    "overview": "Bir hastanenin gece vardiyasında yaşananlar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.6,
+    "vote_count": 10678,
+    "release_date": "2011-10-17",
+    "genre_ids": [
+      10751
+    ]
+  },
+  {
+    "id": 900054,
+    "media_type": "tv",
+    "title": "Starling Row",
+    "overview": "Bir aile, miras kalan yazlıkta tatili geçirmeye çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.3,
+    "vote_count": 14688,
+    "release_date": "1998-09-26",
+    "genre_ids": [
+      37,
+      80,
+      10764
+    ]
+  },
+  {
+    "id": 900055,
+    "media_type": "tv",
+    "title": "Eski Defterler",
+    "overview": "Eski bir sahaf dükkânında her bölüm yeni bir hikâye.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.7,
+    "vote_count": 2780,
+    "release_date": "2008-10-11",
+    "genre_ids": [
+      16,
+      99,
+      10765
+    ]
+  },
+  {
+    "id": 900056,
+    "media_type": "tv",
+    "title": "The Quiet Directorate",
+    "overview": "Gizli bir devlet biriminin sıradışı görevleri.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.5,
+    "vote_count": 11088,
+    "release_date": "2010-12-10",
+    "genre_ids": [
+      35,
+      80,
+      10751
+    ]
+  },
+  {
+    "id": 900057,
+    "media_type": "tv",
+    "title": "Fırtına Adası",
+    "overview": "Eski bir sahaf dükkânında her bölüm yeni bir hikâye.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.5,
+    "vote_count": 6102,
+    "release_date": "2017-10-10",
+    "genre_ids": [
+      10759,
+      10765
+    ]
+  },
+  {
+    "id": 900058,
+    "media_type": "tv",
+    "title": "Cobalt Heights",
+    "overview": "Bir adadaki küçük topluluk, fırtınadan sonra yeniden toparlanır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.5,
+    "vote_count": 1820,
+    "release_date": "2023-10-20",
+    "genre_ids": [
+      18,
+      37,
+      9648
+    ]
+  },
+  {
+    "id": 900059,
+    "media_type": "tv",
+    "title": "Kuyumcular Çarşısı",
+    "overview": "Bir aile, miras kalan yazlıkta tatili geçirmeye çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.5,
+    "vote_count": 17150,
+    "release_date": "2013-12-06",
+    "genre_ids": [
+      16,
+      99,
+      10765
+    ]
+  },
+  {
+    "id": 900060,
+    "media_type": "tv",
+    "title": "Mercer & Vane",
+    "overview": "Sahil kasabasındaki küçük bir karakolun gündelik vakaları.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 5.9,
+    "vote_count": 8096,
+    "release_date": "2019-05-08",
+    "genre_ids": [
+      35
+    ]
+  },
+  {
+    "id": 900061,
+    "media_type": "tv",
+    "title": "Taşra Postası",
+    "overview": "Bir hastanenin gece vardiyasında yaşananlar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.1,
+    "vote_count": 2006,
+    "release_date": "2017-02-15",
+    "genre_ids": [
+      37,
+      10768
+    ]
+  },
+  {
+    "id": 900062,
+    "media_type": "tv",
+    "title": "The Orchard Keepers",
+    "overview": "Sahil kasabasındaki küçük bir karakolun gündelik vakaları.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.6,
+    "vote_count": 12982,
+    "release_date": "2013-07-08",
+    "genre_ids": [
+      37
+    ]
+  },
+  {
+    "id": 900063,
+    "media_type": "tv",
+    "title": "Gece Vardiyası",
+    "overview": "Bir adadaki küçük topluluk, fırtınadan sonra yeniden toparlanır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.1,
+    "vote_count": 3892,
+    "release_date": "2022-07-08",
+    "genre_ids": [
+      10764
+    ]
+  },
+  {
+    "id": 900064,
+    "media_type": "tv",
+    "title": "Fennick Point",
+    "overview": "Bir aile, miras kalan yazlıkta tatili geçirmeye çalışır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.1,
+    "vote_count": 1080,
+    "release_date": "2025-02-15",
+    "genre_ids": [
+      9648
+    ]
+  },
+  {
+    "id": 900065,
+    "media_type": "tv",
+    "title": "Çarşı İçi",
+    "overview": "Genç bir dedektif, şehrin çözülmemiş dosyalarını yeniden açar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.3,
+    "vote_count": 14902,
+    "release_date": "2017-12-17",
+    "genre_ids": [
+      9648,
+      10765
+    ]
+  },
+  {
+    "id": 900066,
+    "media_type": "tv",
+    "title": "The Tallow Street Irregulars",
+    "overview": "Eski bir sahaf dükkânında her bölüm yeni bir hikâye.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.7,
+    "vote_count": 15954,
+    "release_date": "2012-05-25",
+    "genre_ids": [
+      37
+    ]
+  },
+  {
+    "id": 900067,
+    "media_type": "tv",
+    "title": "Üçüncü Perde",
+    "overview": "Eski bir sahaf dükkânında her bölüm yeni bir hikâye.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 8.2,
+    "vote_count": 2195,
+    "release_date": "2013-11-08",
+    "genre_ids": [
+      16,
+      9648
+    ]
+  },
+  {
+    "id": 900068,
+    "media_type": "tv",
+    "title": "Brightwell Station",
+    "overview": "Bir hastanenin gece vardiyasında yaşananlar.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.3,
+    "vote_count": 11405,
+    "release_date": "2008-09-03",
+    "genre_ids": [
+      35
+    ]
+  },
+  {
+    "id": 900069,
+    "media_type": "tv",
+    "title": "Liman Kahvesi",
+    "overview": "Bir adadaki küçük topluluk, fırtınadan sonra yeniden toparlanır.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 6.7,
+    "vote_count": 5407,
+    "release_date": "2020-04-03",
+    "genre_ids": [
+      18,
+      10751
+    ]
+  },
+  {
+    "id": 900070,
+    "media_type": "tv",
+    "title": "Ashgrove",
+    "overview": "Gizli bir devlet biriminin sıradışı görevleri.",
+    "poster_path": "/poster-placeholder.svg",
+    "backdrop_path": null,
+    "vote_average": 7.7,
+    "vote_count": 907,
+    "release_date": "2024-07-13",
+    "genre_ids": [
+      10759,
+      10764,
+      10768
+    ]
+  }
+]

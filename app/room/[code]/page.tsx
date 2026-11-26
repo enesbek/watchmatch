@@ -32,17 +32,11 @@ export default function RoomPage() {
   const deckRef = useRef<MediaItem[]>([]);
   deckRef.current = deck;
 
-  // Oda bilgisini yükle
   useEffect(() => {
     const id = getOrCreateGuestId();
     setUserId(id);
 
     async function load() {
-      // ÖNEMLİ: joinRoom burada çağrılıyor (sadece home sayfasındaki "Odaya Katıl"
-      // formunda değil). Aksi halde QR kod veya paylaşılan link ile doğrudan bu
-      // sayfaya gelen misafir hiçbir zaman veritabanına "guest" olarak kaydolmuyor
-      // ve host'un bekleme ekranı hiç bitmiyordu. joinRoom, çağıran kişi zaten
-      // host ise veritabanında değişiklik yapmadığı için host için de güvenli.
       let data: any;
       try {
         const result = await joinRoom(code);
@@ -71,7 +65,6 @@ export default function RoomPage() {
     load();
   }, [code]);
 
-  // Oda durumu ve match dinleyicisi
   useEffect(() => {
     if (!room?.id) return;
 
@@ -89,7 +82,7 @@ export default function RoomPage() {
 
     const unsubscribe = subscribeToRoom(
       room.id,
-      () => {}, // swipe insert bilgisini şu an kullanmıyoruz; match tetiklemesi matches tablosundan geliyor
+      () => {},
       (payload) => {
         const match = payload.new;
         const item = deckRef.current.find(
@@ -135,13 +128,12 @@ export default function RoomPage() {
         if (matched) setMatchedItem(item);
       }
     } catch (e) {
-      // Sessizce yut: bağlantı sorunu olsa bile kullanıcı kaydırmaya devam edebilir
       console.error(e);
     }
   }
 
   async function handleOpenTrailer(item: MediaItem) {
-    setTrailerKey(null); // yükleniyor durumu
+    setTrailerKey(null);
     const key = await fetchTrailerKey(item.media_type, item.id);
     setTrailerKey(key);
   }

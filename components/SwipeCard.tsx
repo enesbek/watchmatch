@@ -8,7 +8,6 @@ interface Props {
   item: MediaItem;
   onSwipe: (direction: "like" | "pass") => void;
   onOpenTrailer: () => void;
-  /** 0 = en üstteki (aktif) kart, 1 = bir arkadaki, 2 = iki arkadaki ... */
   stackPosition: number;
 }
 
@@ -19,10 +18,6 @@ export default function SwipeCard({ item, onSwipe, onOpenTrailer, stackPosition 
   const controls = useAnimation();
   const [dragDir, setDragDir] = useState<"like" | "pass" | null>(null);
 
-  // Kart yığındaki konumunu değiştirdiğinde (ör. arkadaki kart öne geçtiğinde)
-  // ölçek/opaklık/konumunu doğru değerlere animasyonla senkronize et.
-  // Sadece `initial` kullanmak yeterli değildi çünkü o yalnızca ilk mount'ta çalışır;
-  // ikinci kart üste geçtiğinde küçük/soluk kalmasının sebebi buydu.
   useEffect(() => {
     controls.start({
       scale: 1 - stackPosition * 0.05,
@@ -33,7 +28,6 @@ export default function SwipeCard({ item, onSwipe, onOpenTrailer, stackPosition 
       transition: { type: "spring", stiffness: 300, damping: 30 },
     });
     if (isTop) setDragDir(null);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [stackPosition]);
 
   function handleDrag(_: any, info: PanInfo) {

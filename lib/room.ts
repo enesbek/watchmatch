@@ -2,7 +2,7 @@ import { supabase } from "./supabase";
 import type { DiscoveryMode, MediaType } from "./tmdb";
 
 export function generateRoomCode(): string {
-  return String(Math.floor(1000 + Math.random() * 9000)); // 4 haneli kod
+  return String(Math.floor(1000 + Math.random() * 9000));
 }
 
 export function getOrCreateGuestId(): string {
@@ -79,9 +79,6 @@ export async function recordSwipe(params: {
   if (error) throw error;
 }
 
-/**
- * İki kullanıcı da aynı içeriği "like" yaptıysa true döner ve match kaydı oluşturur.
- */
 export async function checkAndCreateMatch(params: {
   roomId: string;
   userId: string;

@@ -1,6 +1,3 @@
--- WatchMatch Supabase Şeması (Faz 1 + Faz 2 temelleri)
--- Bu dosyayı Supabase Dashboard > SQL Editor içine yapıştırıp çalıştırın.
-
 create table if not exists rooms (
   id uuid primary key default gen_random_uuid(),
   code text unique not null,
@@ -34,7 +31,6 @@ create table if not exists matches (
   created_at timestamptz not null default now()
 );
 
--- Faz 2: Üyelik & kişiselleştirme için (Google login ile birlikte kullanılır)
 create table if not exists user_preferences (
   user_id uuid primary key references auth.users(id) on delete cascade,
   preferred_genres integer[] default '{}',
@@ -47,8 +43,6 @@ alter table swipes enable row level security;
 alter table matches enable row level security;
 alter table user_preferences enable row level security;
 
--- Misafir modu (anonim) için basit erişim politikaları.
--- Not: Prodüksiyonda daha sıkı kurallar önerilir (ör. sadece oda üyeleri erişsin).
 create policy "public read rooms" on rooms for select using (true);
 create policy "public insert rooms" on rooms for insert with check (true);
 create policy "public update rooms" on rooms for update using (true);
@@ -62,7 +56,6 @@ create policy "public insert matches" on matches for insert with check (true);
 create policy "users manage own preferences" on user_preferences
   for all using (auth.uid() = user_id) with check (auth.uid() = user_id);
 
--- Realtime yayınına tabloları ekle
 alter publication supabase_realtime add table rooms;
 alter publication supabase_realtime add table swipes;
 alter publication supabase_realtime add table matches;
